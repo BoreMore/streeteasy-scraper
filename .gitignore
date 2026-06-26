@@ -1,0 +1,44 @@
+# ---- Secrets & session data (NEVER commit — see AGENTS.md Privacy) ----
+.env
+*.env
+!/.env.example
+*.sqlite
+*.sqlite3
+*.db
+# Playwright browser profiles / user data dirs
+user_data_dir/
+.playwright/
+playwright-profile/
+# Downloaded artifacts (images, raw HTML) must never be stored
+downloads/
+*.html
+*.png
+*.jpg
+*.jpeg
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.uv/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+dist/
+build/
+*.egg-info/
+
+# ---- Node / frontend ----
+node_modules/
+frontend/dist/
+.vite/
+
+# ---- Editor / OS ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ---- Claude Code (local, machine-specific) ----
+.claude/settings.local.json
