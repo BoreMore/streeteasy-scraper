@@ -35,7 +35,12 @@ npm run dev      # start the dev server (http://127.0.0.1:5173)
 
 Other scripts: `npm run build`, `npm run preview`, `npm run lint`.
 
-## Privacy
+## StreetEasy area to neighborhood mapping
 
-Per AGENTS.md, this app never stores credentials, raw HTML, downloaded images,
-review text, or paywalled content. The `.gitignore` enforces this.
+[`streeteasy-area-id-mappings/streeteasy-areas.json`](streeteasy-area-id-mappings/streeteasy-areas.json)
+is a complete mapping of all 346 StreetEasy **area IDs** to their neighborhoods.
+StreetEasy search URLs encode neighborhoods as opaque numeric IDs (e.g.
+`area:106,117,142,302`), with no published lookup table. This file maps the area IDs
+to the names of neighborhoods and boroughs. Feel free to use in your own projects.
+See [`streeteasy-area-id-mappings/README.md`](streeteasy-area-id-mappings/README.md)
+for the schema and how it was captured.
